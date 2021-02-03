@@ -1,0 +1,15 @@
+includes:
+  - owners: scalaquest
+    repos: .*
+    branches:
+      - main
+
+modules:
+  - name: RefreshVersions
+    options:
+      strategy: latest
+      versionRegex: \d+(\.\d+)*
+
+labels:
+  name: version-upgrade
+  color: 95f595
