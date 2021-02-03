@@ -1,9 +1,11 @@
 name: DependaBot Schedule
 
 # Checks every day at 4.30 a.m.
-on:
-  schedule:
-    - cron: '30 4 * * *'
+#on:
+#  schedule:
+#    - cron: '30 4 * * *'
+
+on: push
 
 jobs:
   dependaBot:
@@ -14,6 +16,6 @@ jobs:
       - name: Run UpGradle
         uses: DanySK/upgradle-action@master
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          configuration_file: .upgradle.yml
+          token: ${{ secrets.DEP_TOKEN }}
+          configuration_file: upgradle.yml
           version: 0.3.4
