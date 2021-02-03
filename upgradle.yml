@@ -13,3 +13,7 @@ modules:
 labels:
   name: version-upgrade
   color: 95f595
+
+author:
+  name: Dependabot [Bot]
+  email: riccardo.maldini@gmail.com

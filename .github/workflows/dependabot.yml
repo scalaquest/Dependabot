@@ -1,14 +1,12 @@
-name: DependaBot Schedule
+name: Dependabot Schedule
 
 # Checks every day at 4.30 a.m.
-#on:
-#  schedule:
-#    - cron: '30 4 * * *'
-
-on: push
+on:
+  schedule:
+    - cron: '30 4 * * *'
 
 jobs:
-  dependaBot:
+  dependabot:
     runs-on: ubuntu-latest
 
     steps:
