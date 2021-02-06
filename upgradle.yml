@@ -2,7 +2,7 @@ includes:
   - owners: scalaquest
     repos: .*
     branches:
-      - main
+      - dev
 
 modules:
   - name: RefreshVersions
